@@ -4,23 +4,21 @@
 
     <item
         android:id="@+id/bottombaritem_categories"
-        android:icon="@drawable/"
         android:title="Categories"
-        app:showAsAction="ifRoom"
-        />
+        android:icon="@drawable/ic_categories"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/bottombaritem_dashboard"
-        android:icon="@drawable/"
-        android:title="Categories"
-        app:showAsAction="ifRoom"
-        />
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"/>
+
     <item
         android:id="@+id/bottombaritem_profile"
-        android:icon="@drawable/"
-        android:title="Categories"
-        app:showAsAction="ifRoom"
-        />
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"/>
 
 
 </menu>
