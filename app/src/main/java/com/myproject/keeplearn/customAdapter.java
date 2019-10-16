@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class customAdapter extends RecyclerView.Adapter<customAdapter.ViewHolder> {
-private ArrayList<Course> ListCourses=new ArrayList<>();
+    private ArrayList<Course> ListCourses=new ArrayList<>();
 private Context context;
 private onIemClickListener mOnItemClickListener;
 
@@ -62,7 +62,7 @@ public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
         mOnItemClickListener.onItemClicked(getAdapterPosition());
     }
 }
-public interface onIemClickListener{
-    void onItemClicked(int position);
-}
+    public interface onIemClickListener{
+        void onItemClicked(int position);
+    }
 }
