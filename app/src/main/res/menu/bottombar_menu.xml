@@ -19,6 +19,11 @@
         android:title="Profile"
         android:icon="@drawable/ic_profile"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id ="@+id/myCourses"
+        android:title="MyCourses"
+        android:icon="@drawable/ic_book_black_24dp"
+        app:showAsAction="ifRoom"/>
 
 
 </menu>

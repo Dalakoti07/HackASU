@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/iv_courseImg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tv_title"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_description"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_courseUrl"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enroll In Course"
+            android:layout_marginRight="60dp"
+            android:id="@+id/Enroll"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ViewCourse"
+            android:layout_height="wrap_content"
+            android:text="Visit Course"/>
+    </LinearLayout>
+
+</LinearLayout>
