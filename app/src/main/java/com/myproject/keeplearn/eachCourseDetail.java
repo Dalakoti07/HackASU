@@ -33,6 +33,7 @@ public class eachCourseDetail extends AppCompatActivity {
         enrollCourse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
+                // get the id from sharedPreferences and call api enrollMe
 
             }
         });

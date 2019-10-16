@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/bottombaritem_categories"
-        android:title="Categories"
-        android:icon="@drawable/ic_categories"
-        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/bottombaritem_dashboard"
         android:title="Dashboard"
         android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/bottombaritem_categories"
+        android:title="Categories"
+        android:icon="@drawable/ic_categories"
         app:showAsAction="ifRoom"/>
 
     <item
@@ -24,6 +24,5 @@
         android:title="MyCourses"
         android:icon="@drawable/ic_book_black_24dp"
         app:showAsAction="ifRoom"/>
-
 
 </menu>

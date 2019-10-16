@@ -1,6 +1,7 @@
 package com.myproject.keeplearn;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -52,6 +53,9 @@ public class FragmentCategories extends Fragment implements customAdapter.onIemC
     @Override
     public void onItemClicked(int position) {
 
+        Intent intent = new Intent(getActivity(), eachCourseDetail.class);
+        intent.putExtra("course",CoursesList.get(position));
+        startActivity(intent);
     }
     private void makeApiCall() {
         //making progress bar
@@ -60,7 +64,7 @@ public class FragmentCategories extends Fragment implements customAdapter.onIemC
         progressDialog.show();
         //ends here
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url ="https://apj-learning.herokuapp.com/allCourses";
+        String url ="api";
         CoursesList.clear();
 //        Map<String,String> paramId=new HashMap<String,String>();
 //        paramId.put("StudentId",a);
