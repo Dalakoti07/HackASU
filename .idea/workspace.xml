@@ -9,7 +9,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
     <last-search-timestamp>1571238079918</last-search-timestamp>
@@ -23,14 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="48" column="54" lean-forward="true" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+            <state relative-caret-position="192">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2533#2548#0" expanded="true" />
@@ -188,8 +181,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentDashboard.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" />
       </list>
     </option>
   </component>
@@ -699,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="48" column="54" lean-forward="true" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+        <state relative-caret-position="192">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2533#2548#0" expanded="true" />

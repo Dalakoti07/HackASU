@@ -42,8 +42,8 @@ public class FragmentMycourse extends Fragment  implements customAdapter.onIemCl
         View rootview =inflater.inflate(R.layout.fragment_mycourse, container, false);
         RecyclerView recyclerView = (RecyclerView) rootview.findViewById(R.id.recyclerView);
         SharedPreferences sharedPreferences = getContext().getSharedPreferences(SHARED_PREFS, 0);
-        String a = "abc";//sharedPreferences.getString("id", "");
-//setting the layout manager, most important thing
+        String a =sharedPreferences.getString("id", "");
+        //setting the layout manager, most important thing
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         spacingItemDecorator itemDecorator =new spacingItemDecorator(30);
         recyclerView.addItemDecoration(itemDecorator);
