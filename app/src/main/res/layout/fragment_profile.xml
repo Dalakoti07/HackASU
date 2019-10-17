@@ -22,4 +22,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnProf"
         android:text="Change Profile"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:text="Logout"/>
 </LinearLayout>

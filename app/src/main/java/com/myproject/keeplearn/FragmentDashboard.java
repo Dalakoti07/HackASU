@@ -65,6 +65,7 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
         if(a.length()==0 && b.length()==0){
             Intent intent=new Intent(getContext(),login.class);
             startActivity(intent);
+            getActivity().finish();
         }
         String Name;
         Name=sharedPreferences.getString("FirstName", "");
