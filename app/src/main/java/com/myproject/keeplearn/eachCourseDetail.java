@@ -2,9 +2,11 @@ package com.myproject.keeplearn;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -13,11 +15,26 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class eachCourseDetail extends AppCompatActivity {
     Button enrollCourse, visitCourse;
     ImageView courseImg;
     TextView title, description,courseUrl;
+    public static final String SHARED_PREFS = "sharedPrefs";
     Course course;
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -34,7 +51,7 @@ public class eachCourseDetail extends AppCompatActivity {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 // get the id from sharedPreferences and call api enrollMe
-
+                enrollAPI();
             }
         });
         visitCourse.setOnClickListener(new View.OnClickListener() {
@@ -90,4 +107,40 @@ public class eachCourseDetail extends AppCompatActivity {
     public class WebChromeClass extends WebChromeClient {
     }
 
+    void enrollAPI(){
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        String a = sharedPreferences.getString("id", "");
+        String courseId=course.getId();
+        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
+        //ends here
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="https://apj-learning.herokuapp.com/enrollMe";
+//        CoursesList.clear();
+        Map<String,String> paramId=new HashMap<String,String>();
+        paramId.put("EmailId",a);
+        paramId.put("CourseId",courseId);
+//        Toast.makeText(this, a, Toast.LENGTH_SHORT).show();
+//        Log.v("id",a);
+        JSONObject paramJson=new JSONObject(paramId);
+
+        JsonObjectRequest objectRequest =new JsonObjectRequest(Request.Method.POST, url, paramJson, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+//                adapter.notifyDataSetChanged();
+                progressDialog.dismiss();
+                Toast.makeText(eachCourseDetail.this, "Successufully registered", Toast.LENGTH_SHORT).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(), "Error from Volley", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
+            }
+        });
+        // Add the request to the RequestQueue.
+        queue.add(objectRequest);
+    }
 }

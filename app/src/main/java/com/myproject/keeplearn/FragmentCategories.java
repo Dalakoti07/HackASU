@@ -78,52 +78,57 @@ public class FragmentCategories extends Fragment implements customAdapter.onIemC
             public void onResponse(JSONObject response) {
                 int noOfCourses=response.length();
                 JSONObject temp = null;
+                String codeStr,name,html_url,instructorId,description;
+                System.out.println(response.toString());
+                codeStr=name=html_url=instructorId=description=null;
 //                Toast.makeText(Explore.this, response.toString(), Toast.LENGTH_SHORT).show();
                 Toast.makeText(getContext(), Integer.toString(noOfCourses), Toast.LENGTH_SHORT).show();
                 for(int i=0;i<noOfCourses;i++){
                     try {
                         temp=response.getJSONObject("course"+Integer.toString(i+1));
+
+                         codeStr= null;
+                        try {
+                            codeStr = temp.getString("Code");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            progressDialog.dismiss();
+                        }
+                         name= null;
+                        try {
+                            name = temp.getString("Name");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            progressDialog.dismiss();
+                        }
+                         html_url= null;
+                        try {
+                            html_url = temp.getString("imageUrl");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            progressDialog.dismiss();
+                        }
+                         instructorId= null;
+                        try {
+                            instructorId = temp.getString("InstructorId");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            progressDialog.dismiss();
+                        }
+                         description= null;
+                        try {
+                            description = temp.getString("Description");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            progressDialog.dismiss();
+                        }
+
                     } catch (JSONException e) {
                         Toast.makeText(getContext(), "error in parsing", Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                         progressDialog.dismiss();
                     }
 //                    Toast.makeText(Explore.this,temp.toString(), Toast.LENGTH_LONG).show();
-                    String codeStr= null;
-                    try {
-                        codeStr = temp.getString("Code");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
-                    String name= null;
-                    try {
-                        name = temp.getString("Name");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
-                    String html_url= null;
-                    try {
-                        html_url = temp.getString("imageUrl");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
-                    String instructorId= null;
-                    try {
-                        instructorId = temp.getString("InstructorId");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
-                    String description= null;
-                    try {
-                        description = temp.getString("Description");
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                        progressDialog.dismiss();
-                    }
                     CoursesList.add(new Course(codeStr,name,html_url,instructorId,description));
                 }
                 adapter.notifyDataSetChanged();
