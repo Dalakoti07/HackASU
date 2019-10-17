@@ -64,7 +64,7 @@ public class FragmentCategories extends Fragment implements customAdapter.onIemC
         progressDialog.show();
         //ends here
         RequestQueue queue = Volley.newRequestQueue(getContext());
-        String url ="api";
+        String url ="https://apj-learning.herokuapp.com/allCourses";
         CoursesList.clear();
 //        Map<String,String> paramId=new HashMap<String,String>();
 //        paramId.put("StudentId",a);

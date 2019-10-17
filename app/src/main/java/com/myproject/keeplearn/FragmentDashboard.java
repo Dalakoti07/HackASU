@@ -2,6 +2,7 @@ package com.myproject.keeplearn;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -32,12 +34,14 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
     private RecyclerView.Adapter adapter;
     private ArrayList<Course> CoursesList=new ArrayList<Course>();
     public static final String SHARED_PREFS = "sharedPrefs";
+    private TextView tv_Name;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootview =inflater.inflate(R.layout.fragment_dashboard, container, false);
         RecyclerView recyclerView = (RecyclerView) rootview.findViewById(R.id.recyclerView);
+        tv_Name=rootview.findViewById(R.id.StudentName);
 
 //setting the layout manager, most important thing
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -48,10 +52,26 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
 
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         String a = sharedPreferences.getString("id", "");
-        makeApiCall(a);
+        isLoggedIn();
+
+//        makeApiCall(a);
         return rootview;
     }
+    private void isLoggedIn() {
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
+        String a = sharedPreferences.getString("id", "");
+        String b = sharedPreferences.getString("password", "");
 
+        if(a.length()==0 && b.length()==0){
+            Intent intent=new Intent(getContext(),login.class);
+            startActivity(intent);
+        }
+        String Name;
+        Name=sharedPreferences.getString("FirstName", "");
+        Name+=" "+sharedPreferences.getString("LastName","");
+        Toast.makeText(getContext(), Name, Toast.LENGTH_SHORT).show();
+        tv_Name.setText(Name);
+    }
     private void makeApiCall(String a) {
         //making progress bar
         final ProgressDialog progressDialog = new ProgressDialog(getContext());
@@ -62,7 +82,7 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
         String url ="https://apj-learning.herokuapp.com/myCourses";
         CoursesList.clear();
         Map<String,String> paramId=new HashMap<String,String>();
-        paramId.put("StudentId",a);
+        paramId.put("EmailId",a);
         Toast.makeText(getContext(), a, Toast.LENGTH_SHORT).show();
         Log.v("id",a);
         JSONObject paramJson=new JSONObject(paramId);
