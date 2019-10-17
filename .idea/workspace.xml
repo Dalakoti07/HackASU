@@ -23,11 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/eachCourseDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/eachCourseDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_each_course_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_each_course_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +59,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+            <state relative-caret-position="379">
+              <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,19 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+            <state relative-caret-position="434">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,52 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/eachCourseDetail.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="59" column="68" lean-forward="true" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_each_course_detail.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_categories.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+            <state relative-caret-position="187">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -184,8 +140,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottom_bar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/Course.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/spacingItemDecorator.java" />
@@ -198,12 +152,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentDashboard.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/eachCourseDetail.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_each_course_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
       </list>
     </option>
   </component>
@@ -393,12 +349,12 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.24504249" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.24504249" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Android Profiler" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TODO" order="4" />
-      <window_info anchor="bottom" id="Logcat" order="5" weight="0.23654391" />
+      <window_info anchor="bottom" id="Logcat" order="5" visible="true" weight="0.23654391" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="8" />
@@ -502,24 +458,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -646,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mycourse.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -687,26 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_each_course_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -717,13 +628,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/eachCourseDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="59" column="68" lean-forward="true" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+        <state relative-caret-position="-912">
+          <caret line="63" column="55" lean-forward="true" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentCategories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentMycourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/myproject/keeplearn/FragmentProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

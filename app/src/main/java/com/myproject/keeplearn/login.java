@@ -42,7 +42,6 @@ public class login extends AppCompatActivity {
     }
 
     private void storeAndLaunch(String idstr,String pdstr) {
-
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
