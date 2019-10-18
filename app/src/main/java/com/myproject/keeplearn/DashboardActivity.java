@@ -7,9 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
@@ -44,7 +41,7 @@ public class DashboardActivity extends AppCompatActivity {
                             selectedFragment = new FragmentProfile();
                             break;
                         case R.id.myCourses:
-                            selectedFragment= new FragmentMycourse();
+                            selectedFragment= new FragmentMyNotes();
                             break;
                     }
 

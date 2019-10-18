@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,6 +26,7 @@ import java.util.Map;
 public class login extends AppCompatActivity {
 
     private EditText id,pd;
+    private TextView regTv;
     private String FirstName="",LastName="";
     public static final String SHARED_PREFS = "sharedPrefs";
     @Override
@@ -33,6 +35,13 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         id=(EditText) findViewById(R.id.et_StudentId);
         pd=(EditText) findViewById(R.id.et_Password);
+        regTv=findViewById(R.id.link_reg);
+    }
+
+    public void Register(View view){
+        Intent intent=new Intent(this,register.class);
+        startActivity(intent);
+        finish();
     }
 
     public void Signin(View view){
