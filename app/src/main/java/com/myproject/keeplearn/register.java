@@ -97,13 +97,15 @@ public class register extends AppCompatActivity {
                     if(response.getString("status")=="success"){
                         Toast.makeText(register.this, "You are registered", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
-                        storeAndLaunch(Email,Pass,FName,LName);
                     }
                 } catch (JSONException e) {
                     Toast.makeText(register.this, "Server Error", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                     progressDialog.dismiss();
                 }
+//                adapter.notifyDataSetChanged();
+                progressDialog.dismiss();
+                storeAndLaunch(Email,Pass,FName,LName);
             }
         }, new Response.ErrorListener() {
             @Override

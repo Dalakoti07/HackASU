@@ -85,38 +85,40 @@ public class FragmentMycourse extends Fragment  implements customAdapter.onIemCl
                 JSONObject temp = null;
 //                Toast.makeText(Explore.this, response.toString(), Toast.LENGTH_SHORT).show();
                 Toast.makeText(getContext(), Integer.toString(noOfCourses), Toast.LENGTH_SHORT).show();
+                String codeStr,name,html_url,instructorId,description;
+                codeStr=name=html_url=instructorId=description="";
                 for(int i=0;i<noOfCourses;i++){
                     try {
                         temp=response.getJSONObject("course"+Integer.toString(i+1));
-                        String codeStr= null;
+//                        String codeStr= null;
                         try {
                             codeStr = temp.getString("Code");
                         } catch (JSONException e) {
                             e.printStackTrace();
                             progressDialog.dismiss();
                         }
-                        String name= null;
+//                        String name= null;
                         try {
                             name = temp.getString("Name");
                         } catch (JSONException e) {
                             e.printStackTrace();
                             progressDialog.dismiss();
                         }
-                        String html_url= null;
+//                        String html_url= null;
                         try {
                             html_url = temp.getString("imageUrl");
                         } catch (JSONException e) {
                             e.printStackTrace();
                             progressDialog.dismiss();
                         }
-                        String instructorId= null;
+//                        String instructorId= null;
                         try {
                             instructorId = temp.getString("InstructorId");
                         } catch (JSONException e) {
                             e.printStackTrace();
                             progressDialog.dismiss();
                         }
-                        String description= null;
+//                        String description= null;
                         try {
                             description = temp.getString("Description");
                         } catch (JSONException e) {
