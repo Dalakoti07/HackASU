@@ -54,7 +54,7 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
         String a = sharedPreferences.getString("id", "");
         isLoggedIn();
 
-//        makeApiCall(a);
+        makeApiCall(a);
         return rootview;
     }
     private void isLoggedIn() {
@@ -94,7 +94,7 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
                 int noOfCourses=response.length();
                 JSONObject temp = null;
 //                Toast.makeText(Explore.this, response.toString(), Toast.LENGTH_SHORT).show();
-                Toast.makeText(getContext(), Integer.toString(noOfCourses), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), Integer.toString(noOfCourses), Toast.LENGTH_SHORT).show();
                 for(int i=0;i<noOfCourses;i++){
                     try {
                         temp=response.getJSONObject("course"+Integer.toString(i+1));
@@ -158,6 +158,8 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
 
     @Override
     public void onItemClicked(int position) {
-
+        Intent intent = new Intent(getActivity(), eachCourseDetail.class);
+        intent.putExtra("course",CoursesList.get(position));
+        startActivity(intent);
     }
 }
