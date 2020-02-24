@@ -22,3 +22,5 @@ E - learning android app!
 <img src="screenshot/navTwo.png" width="40%"/>
 </div>
 
+### Backend
+<h4>The backend was developed in flask. Refer https://github.com/Dalakoti07/hack-asu-backend for code base</h4>
