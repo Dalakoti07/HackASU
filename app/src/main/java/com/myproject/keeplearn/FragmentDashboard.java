@@ -75,9 +75,9 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
     }
     private void makeApiCall(String a) {
         //making progress bar
-        final ProgressDialog progressDialog = new ProgressDialog(getContext());
-        progressDialog.setMessage("Loading...");
-        progressDialog.show();
+//        final ProgressDialog progressDialog = new ProgressDialog(getContext());
+//        progressDialog.setMessage("Loading...");
+//        progressDialog.show();
         //ends here
         RequestQueue queue = Volley.newRequestQueue(getContext());
         String url ="https://apj-learning.herokuapp.com/myCourses";
@@ -106,52 +106,52 @@ public class FragmentDashboard  extends Fragment implements customAdapter.onIemC
                             codeStr = temp.getString("Code");
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                         }
 //                        String name= null;
                         try {
                             name = temp.getString("Name");
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                         }
 //                        String html_url= null;
                         try {
                             html_url = temp.getString("Image");
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                         }
 //                        String instructorId= null;
                         try {
                             instructorId = temp.getString("Instructor Id");
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                         }
 //                        String description= null;
                         try {
                             description = temp.getString("Description");
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                         }
                     } catch (JSONException e) {
                         Toast.makeText(getContext(), "error in parsing", Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
-                        progressDialog.dismiss();
+//                        progressDialog.dismiss();
                     }
 //
                     CoursesList.add(new Course(codeStr,name,html_url,instructorId,description));
                 }
                 adapter.notifyDataSetChanged();
-                progressDialog.dismiss();
+//                progressDialog.dismiss();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getContext(), "Error from Volley", Toast.LENGTH_SHORT).show();
-                progressDialog.dismiss();
+//                progressDialog.dismiss();
             }
         });
         // Add the request to the RequestQueue.
